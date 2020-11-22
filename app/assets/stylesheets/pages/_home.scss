@@ -1,1 +1,107 @@
 // Specific CSS for your home-page
+
+body {
+  background-color: #1b998b;
+}
+
+
+.banner {
+  background-color: black;
+  background-image: url('./banner-image.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.overlay {
+  position:relative;
+  background-color: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100%;
+
+}
+
+.banner-container {
+  text-align: center;
+  color: white;
+  padding: 200px 0 200px 0;
+}
+
+h1 {
+  font-weight: bold;
+  text-shadow: 0px 0px 15px #000000;
+}
+
+h2 {
+  text-shadow: 0px 0px 15px #000000;
+}
+
+.banner-btn {
+  font-size: 20px;
+  color:white;
+  background-color: #009c9c;
+  padding: 10px 15px 10px 15px;
+  border: 0px;
+  border-radius: 25px;
+}
+
+.banner-btn:hover {
+  text-decoration: none;
+  color:#009c9c;
+  font-weight:bold;
+  background-color: white;
+  border: 1px #009c9c solid;
+  transition: 0.7s;
+}
+
+.btn-container {
+  padding-top: 20px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding-inline-start: 0px;
+}
+
+.card-section {
+  padding: 5% 10% 10% 10%;
+}
+
+.cocktail-card {
+  background-color: white;
+  padding: 20px 60px 20px 60px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
