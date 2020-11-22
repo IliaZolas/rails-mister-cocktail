@@ -1,4 +1,4 @@
-class CocktailController < ApplicationController
+class CocktailsController < ApplicationController
 
   def index
     @cocktails = Cocktail.all
@@ -36,6 +36,5 @@ class CocktailController < ApplicationController
     def cocktail_params
       params.require(:cocktail).permit(:name)
     end
-
 
 end
