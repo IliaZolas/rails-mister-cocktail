@@ -1,4 +1,14 @@
-<h1>Create a new cocktail</h1>
+<div class="banner">
+<div class="overlay">
+  <div class="banner-container">
+    <h1>Create a Cocktail</h1>
+    <h2>Make your own cocktail to add to our list</h2>
+  </div>
+  </div>
+</div>
+</div>
+
+<div class="card-section">
 
 <%= form_for(@cocktail) do |f| %>
   <%= f.label :name %>
@@ -7,3 +17,4 @@
 <% end %>
 
 <%= link_to 'Home', cocktails_path %>
+</div>
