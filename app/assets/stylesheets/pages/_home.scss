@@ -64,8 +64,8 @@ h2 {
 }
 
 ul {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   list-style: none;
   padding-inline-start: 0px;
 }
@@ -77,8 +77,10 @@ ul {
 .cocktail-card {
   background-color: white;
   padding: 10px;
+  margin: 20px;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5)
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  // width: 200px;
 }
 
 

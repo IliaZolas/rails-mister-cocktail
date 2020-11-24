@@ -12,10 +12,15 @@
 
 <div class="card-section">
 <ul>
-    <% @cocktails.each do |cocktail| %>
-    <li class="cocktail-card h3"><%= cocktail.name %></li>
+  <% @cocktail.each do |cocktail| %>
+    <li class="cocktail-card h3">
+      <%if cocktail.photo.attached?%>
+      <%= cl_image_tag cocktail.photo.key, height: 200, width: 300, crop: :fill %>
+      <h2><%= cocktail.name %></h2>
+      <p><%= cocktail.description %></p>
+      <%end%>
+    </li>
   <% end %>
-
   </ul>
 </div>
 
