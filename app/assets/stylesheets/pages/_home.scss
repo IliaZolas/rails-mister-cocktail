@@ -1,25 +1,29 @@
 // Specific CSS for your home-page
 
 body {
-  background-color: #1b998b;
-}
-
-
-.banner {
-  background-color: black;
-  background-image: url('./banner-image.jpg');
+  background-color: #9e0059;
+  background-image: url('https://images.unsplash.com/photo-1570204865352-934c744d682c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
 }
 
+
+// .banner {
+//   // background-color: black;
+//   // background-image: url('./banner-image.jpg');
+//   // -webkit-background-size: cover;
+//   // -moz-background-size: cover;
+//   // -o-background-size: cover;
+//   // background-size: cover;
+//   // display: flex;
+//   // align-items: center;
+//   // justify-content: center;
+
+// }
+
 .overlay {
-  position:relative;
   background-color: rgba(0,0,0,0.5);
   width: 100%;
   height: 100%;
@@ -29,22 +33,38 @@ body {
 .banner-container {
   text-align: center;
   color: white;
-  padding: 200px 0 200px 0;
+  padding: 200px 0 100px 0;
+}
+
+.main-heading {
+  display: flex;
+  justify-content: space-around;
+  h2 {
+    color: white;
+    font-weight: bold;
+    text-shadow: 0px 0px 15px pink;
+  }
+
 }
 
 h1 {
+  font-size: 56px;
   font-weight: bold;
-  text-shadow: 0px 0px 15px #000000;
+  text-shadow: 0px 0px 15px pink;
 }
 
 h2 {
   text-shadow: 0px 0px 15px #000000;
 }
 
+p {
+  font-size: 18px;
+}
+
 .banner-btn {
   font-size: 30px;
   color:white;
-  background-color: #009c9c;
+  background-color: #9e0059;
   padding: 10px 20px 10px 20px;
   border: 0px;
   border-radius: 25px;
@@ -52,10 +72,10 @@ h2 {
 
 .banner-btn:hover {
   text-decoration: none;
-  color:#009c9c;
+  color:#9e0059;
   font-weight:bold;
   background-color: white;
-  border: 1px #009c9c solid;
+  border: 1px #9e0059 solid;
   transition: 0.7s;
 }
 
@@ -63,29 +83,66 @@ h2 {
   padding-top: 20px;
 }
 
-ul {
+.card-section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  list-style: none;
-  padding-inline-start: 0px;
-}
-
-.card-section {
-  padding: 5% 10% 10% 10%;
+  grid-gap: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .cocktail-card {
+  display: flex;
+  // justify-content: space-around;
   background-color: white;
-  padding: 10px;
-  margin: 20px;
+  height: 300px;
+  // padding: 10px;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  box-shadow: 0 0 18px rgba(0,0,0,0.8);
   // width: 200px;
+  overflow: hidden;
 }
 
+.main-area {
 
+  // background-image: url('https://images.unsplash.com/photo-1575444758702-4a6b9222336e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80');
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // -o-background-size: cover;
+  // background-size: cover;
+}
 
+.card-image {
+  position:relative;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  margin-top:-20px;
+  margin-left: -20px;
+  
+}
 
+.card-heading {
+  position: absolute;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+
+}
+
+.card-para {
+  position: absolute;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 60px;
+}
+
+.card-avatar {
+  
+}
 
 
 

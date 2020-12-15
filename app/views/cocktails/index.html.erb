@@ -1,27 +1,35 @@
-<div class="banner">
+
 <div class="overlay">
   <div class="banner-container">
     <h1>Cocktails</h1>
-    <h2>This is a list of all cocktails</h2>
-    <div class="btn-container">
-    <%= link_to 'Create a cocktail', new_cocktail_path, class:"banner-btn" %>
+    <h2>A library of cocktails made by users across the web</h2>
+      <div class="btn-container">
+        <%= link_to 'Create a cocktail', new_cocktail_path, class:"banner-btn" %>
+      </div>
   </div>
+  <div class="main-area">
+    <div class="main-heading">
+      <h2>Choose a cocktail below</h2>
+    </div>
+    <div class="card-section">
+        <% @cocktail.each do |cocktail| %>
+        <div class="cocktail-card h3">
+            <%if cocktail.photo.attached?%>
+            <div class="card-image">
+              <%= cl_image_tag cocktail.photo.key, height: 600, width: 800, crop: :fill %>
+            </div>
+            <div class="card-heading">
+              <h2><%= cocktail.name %></h2>
+            </div>
+            <div class="card-para">
+              <p><%= cocktail.description %></p>
+            </div>
+            <div class="card-avatar">
+              <%= cl_image_tag cocktail.photo.key, height: 600, width: 800 %>
+            </div>
+          <%end%>
+        </div>
+          <% end %>
+    </div>
   </div>
 </div>
-</div>
-
-<div class="card-section">
-<ul>
-  <% @cocktail.each do |cocktail| %>
-    <li class="cocktail-card h3">
-      <%if cocktail.photo.attached?%>
-      <%= cl_image_tag cocktail.photo.key, height: 200, width: 300, crop: :fill %>
-      <h2><%= cocktail.name %></h2>
-      <p><%= cocktail.description %></p>
-      <%end%>
-    </li>
-  <% end %>
-  </ul>
-</div>
-
-
