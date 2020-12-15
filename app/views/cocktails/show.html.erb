@@ -1,16 +1,26 @@
-<div class="banner">
-<div class="overlay">
-  <div class="banner-container">
-    <h1><%= @cocktail.name %></h1>
-    <h2>Thanks for the new cocktail!</h2>
-  </div>
-  </div>
-</div>
-</div>
+<div class="show-background" >
+    <%= cl_image_tag @cocktail.photo.key, class:"background-image-show", crop: :fill %>
+  <div class="show-section">
+  <div class="overlay full-height show-background">
+    <div class="banner-container">
+      <h1><%= @cocktail.name %></h1>
+      <h2>Thanks for the new cocktail!</h2>
+    </div>
+  
 
-<div class="card-section">
-  <%= cl_image_tag @cocktail.photo.key, height: 300, width: 400, crop: :fill %>
-    <h2><%= @cocktail.name %></h2>
-    <p><%= @cocktail.description %></p>
-    <%= link_to 'Home', cocktails_path %>
+
+  <div class="show-cocktail-section">
+    <div class="cocktail-new">
+      <div>
+        <%= cl_image_tag @cocktail.photo.key, height: 300, width: 400, crop: :fill %>
+      </div>
+      <div class="card-heading-show">
+        <h2><%= @cocktail.name %></h2>
+        <p><%= @cocktail.description %></p>
+        <%= link_to 'Home', cocktails_path %>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
 </div>

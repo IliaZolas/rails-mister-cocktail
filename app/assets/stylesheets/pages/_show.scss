@@ -1,0 +1,45 @@
+.show-cocktail-section {
+    background-color: rgba(0,0,0,0.4);
+    padding: 50px;
+    border-radius: 10px;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.cocktail-new {
+    display: flex;
+}
+
+.card-heading-show {
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+
+}
+
+.card-para-show {
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 60px;
+}
+
+.show-background {
+    position:relative;
+    height: 100vh;
+}
+
+.background-image-show {
+    width: 100%;
+    height: 100vh;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+
+.show-section {
+    position: absolute;
+    width: 100%;
+    top:0;
+    left:0;
+}
