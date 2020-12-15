@@ -1,21 +1,23 @@
-<div class="banner">
-<div class="overlay">
-  <div class="banner-container">
+
+<div class="overlay full-height">
+  <div class="banner-container-new">
     <h1>Create a Cocktail</h1>
     <h2>Make your own cocktail to add to our list</h2>
   </div>
+  <div class="form-section">  
+    <div class="form-container">
+      <%= simple_form_for(@cocktail) do |f| %>
+      <%= f.input :name, 
+                  input_html: { autocomplete: "Cocktail Name" },
+                  placeholder: "Your Cocktail Name" %>
+      <%= f.input :description,
+                  placeholder: "Your Cocktail Description"  %>
+      <%= f.input :photo, as: :file %>
+      <%= f.submit class:"submit-button" %>
+      <% end %>
+      <div>
+        <%= link_to 'Home', cocktails_path %>
+      </div>
+    </div>
   </div>
-</div>
-</div>
-
-<div class="card-section">
-
-<%= simple_form_for(@cocktail) do |f| %>
-  <%= f.input :name %>
-  <%= f.input :description %>
-  <%= f.input :photo, as: :file %>
-  <%= f.submit %>
-<% end %>
-
-<%= link_to 'Home', cocktails_path %>
 </div>

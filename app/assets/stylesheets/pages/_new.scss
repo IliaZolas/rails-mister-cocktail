@@ -1,0 +1,29 @@
+.form-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.form-container {
+    background-color: rgba(0,0,0,0.4);
+    padding: 50px;
+    width: 900px;
+    border-radius: 10px;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.banner-container-new {
+    text-align: center;
+    color: white;
+    padding: 200px 0px 50px 0px;
+}
+
+.submit-button {
+    color: white;
+    background-color: #9e0059;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    border: 0px;
+}
