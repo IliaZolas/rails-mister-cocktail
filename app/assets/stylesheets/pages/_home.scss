@@ -93,18 +93,6 @@ p {
   padding-bottom: 40px;
 }
 
-.cocktail-card {
-  display: flex;
-  // justify-content: space-around;
-  background-color: white;
-  height: 300px;
-  // padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 0 18px rgba(0,0,0,0.8);
-  // width: 200px;
-  overflow: hidden;
-}
-
 .main-area {
 
   // background-image: url('https://images.unsplash.com/photo-1575444758702-4a6b9222336e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80');
@@ -115,52 +103,108 @@ p {
 }
 
 .card-image {
-  position:relative;
+  // position:relative;
+  // filter: blur(8px);
+  // -webkit-filter: blur(8px);
+  // margin-top:-20px;
+  // margin-left: -20px;
+  
+}
+.cocktail-card {
+  position: relative;
+  // display: flex;
+  // justify-content: space-around;
+  height: 200px;
+  // width: 100%;
+  // padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 18px rgba(0,0,0,0.8);
+  // width: 200px;
+  overflow: hidden;
+}
+
+.img-bg {
+  position: absolute;
+}
+
+.img-card-bg {
   filter: blur(8px);
   -webkit-filter: blur(8px);
-  margin-top:-20px;
-  margin-left: -20px;
-  
+  // margin-top:-20px;
+  // margin-left: -20px;
+}
+
+.img-avatar {
+  border-radius: 180px;
+  width: 100px;
+  height: 100px;
+  border: 5px solid white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.card-container-index {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  padding:10px;
+  top:0;
+  width: 100%;
+  // padding: 10px;
+}
+
+.card-left {
+  width: 70%;
+  padding:10px;
+}
+.card-right {
+  width: 30%;
+  padding-top: 80px;
+  text-align: right;
 }
 
 .card-heading {
-  position: absolute;
   color: white;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 20px;
+  // padding-left: 20px;
+  // padding-right: 20px;
+  // padding-top: 20px;
 
 }
 
 .card-para {
-  position: absolute;
   color: white;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 60px;
+  text-shadow: 0 0 15px rgba(0,0,0,0.5);
+  // padding-left: 20px;
+  // padding-right: 20px;
+  // padding-top: 60px;
 }
+
 
 .card-avatar {
-  
+
 }
 
 
+.show-btn {
+    font-size: 16px;
+    color: white;
+    background-color: #9e0059;
+    padding: 10px 20px 10px 20px;
+    border: 0px;
+    border-radius: 10px;
+    &:hover {
+      font-size: 16px;
+      color: white;
+      background-color: #9e0059;
+      padding: 10px 20px 10px 20px;
+      border: 0px;
+      border-radius: 10px;
+      text-decoration: none;
+    }
+    
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.show-btn-container {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 20px;
+}

@@ -12,24 +12,32 @@
       <h2>Choose a cocktail below</h2>
     </div>
     <div class="card-section">
-        <% @cocktail.each do |cocktail| %>
+      <% @cocktail.each do |cocktail| %>
         <div class="cocktail-card h3">
-            <%if cocktail.photo.attached?%>
-            <div class="card-image">
-              <%= cl_image_tag cocktail.photo.key, height: 600, width: 800, crop: :fill %>
-            </div>
-            <div class="card-heading">
-              <h2><%= cocktail.name %></h2>
-            </div>
-            <div class="card-para">
-              <p><%= cocktail.description %></p>
-            </div>
-            <div class="card-avatar">
-              <%= cl_image_tag cocktail.photo.key, height: 600, width: 800 %>
-            </div>
+          <%if cocktail.photo.attached?%>
+            <div class="img-bg">
+              <%= cl_image_tag cocktail.photo.key, width: 0.27, crop: :fill, class:"img-card-bg" %>
+              </div>
+                <div class="card-container-index">
+                  <div class="card-left">
+                    <div class="card-heading">
+                      <h2><%= cocktail.name %></h2>
+                    </div>
+                    <div class="card-para">
+                      <p><%= cocktail.description %></p>
+                    </div>
+                    <div class="show-btn-container">
+                      <%= link_to "View", cocktail_path(cocktail), class: "show-btn"  %>
+                    </div>
+                  </div>
+                  <div class="card-right">
+                    <div class="card-avatar">
+                      <%= cl_image_tag cocktail.photo.key, crop: :fill, class:"img-avatar" %>
+                    </div>
+                  </div>
+                </div> 
           <%end%>
         </div>
-          <% end %>
-    </div>
+      <% end %>
   </div>
 </div>
